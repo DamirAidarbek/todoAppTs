@@ -1,0 +1,57 @@
+.todoList {
+    display: grid;
+    grid-template-columns: 1fr 60px 60px;
+    background: #dbe2ef;
+    border-radius: 5px;
+    margin-bottom: 13px;
+
+    &Label {
+        font: 1rem/1.4 'Roboto', sans-serif;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    &Checkbox {
+        width: 20px;
+        cursor: pointer;
+    }
+
+    &Title {
+        font: 1.2rem/1.4 'Roboto', sans-serif;
+        padding: 10px;
+    }
+
+    &EditText {
+        font: 1.2rem/1.4 'Roboto', sans-serif;
+        padding: 10px;
+        border: none;
+        background: #dbe2ef;
+    }
+
+    &Edit,
+    &Remove,
+    &Check {
+        border: none;
+        background: none no-repeat center center;
+        padding: 0;
+        cursor: pointer;
+        transition: opacity 0.3s;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    &Edit {
+        background-image: url(images/edit.svg);
+    }
+
+    &Remove {
+        background-image: url(images/trash.svg);
+    }
+
+    &Check {
+        background-image: url(images/check.svg);
+    }
+}
